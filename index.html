@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استبيان قياس رضا المستفيدين 2026 م</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandDark: '#166156',
+                        brandLight: '#21A38E',
+                        brandAccent: '#D2A16E',
+                        brandGold: '#AE7848',
+                    },
+                    fontFamily: {
+                        sans: ['"IBM Plex Sans Arabic"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'IBM Plex Sans Arabic', sans-serif;
+            background-color: #fafbfc;
+            color: #1e293b;
+        }
+        .apple-card {
+            background: #ffffff;
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            box-shadow: 0 10px 30px -5px rgba(22, 97, 86, 0.05);
+        }
+        .star-btn {
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .star-btn:hover {
+            transform: scale(1.15);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-[#21A38E] selection:text-white">
+
+    <header class="w-full py-5 px-6 md:px-12 flex items-center justify-between border-b border-slate-100 bg-white/90 backdrop-blur-md sticky top-0 z-40">
+        <div class="flex items-center gap-3.5">
+            <img src="https://cdn.phototourl.com/free/2026-09-15-fdc29d10-82b2-4713-a015-b86d8c04401d.png" alt="شعار الجمعية" class="h-12 w-auto object-contain">
+            <div>
+                <h1 class="text-sm md:text-base font-bold text-slate-900 tracking-tight">جمعية التنمية الأهلية بعوالي المدينة المنورة</h1>
+                <p class="text-[11px] text-[#21A38E] font-semibold">استبيان قياس رضا المستفيدين 2026 م</p>
+            </div>
+        </div>
+        <div class="hidden sm:flex items-center gap-2">
+            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#166156]/10 text-brandDark text-xs font-semibold border border-[#166156]/20">
+                <i class="fa-solid fa-circle-check text-[10px]"></i> نموذج رسمي معتمد
+            </span>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 sm:px-6 py-12 max-w-2xl">
+        
+        <!-- Intro Hero -->
+        <div class="text-center mb-10 space-y-4">
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
+                استبيان قياس رضا المستفيدين 2026 م
+            </h2>
+            <p class="text-slate-600 max-w-xl mx-auto text-sm sm:text-base leading-relaxed font-normal">
+                منصة تقييم وتطوير الخدمات المجتمعية لجمعية التنمية الأهلية بعوالي المدينة المنورة.
+            </p>
+        </div>
+
+        <!-- Structured Info Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+            <div class="apple-card p-5 rounded-2xl flex flex-col items-center text-center space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-[#166156]/10 text-[#166156] flex items-center justify-center font-bold text-sm">
+                    <i class="fa-solid fa-bullseye"></i>
+                </div>
+                <h3 class="font-bold text-slate-900 text-xs sm:text-sm">الهدف التطويري</h3>
+                <p class="text-slate-500 text-[11px] leading-relaxed">
+                    تقديم خدمة أفضل وبناء خطة تطويرية متكاملة تلبي تطلعات واحتياجات المجتمع.
+                </p>
+            </div>
+
+            <div class="apple-card p-5 rounded-2xl flex flex-col items-center text-center space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-[#21A38E]/10 text-[#21A38E] flex items-center justify-center font-bold text-sm">
+                    <i class="fa-solid fa-handshake-angle"></i>
+                </div>
+                <h3 class="font-bold text-slate-900 text-xs sm:text-sm">مشاركتكم تصنع الأثر</h3>
+                <p class="text-slate-500 text-[11px] leading-relaxed">
+                    تعبئتكم لهذا الاستبيان تسهم بشكل مباشر في تحسين أداء البرامج والمشاريع القادمة.
+                </p>
+            </div>
+
+            <div class="apple-card p-5 rounded-2xl flex flex-col items-center text-center space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-[#D2A16E]/10 text-[#AE7848] flex items-center justify-center font-bold text-sm">
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <h3 class="font-bold text-slate-900 text-xs sm:text-sm">معايير دقيقة</h3>
+                <p class="text-slate-500 text-[11px] leading-relaxed">
+                    اختر الإجابة الأقرب لانطباعك وت تجربتك الشخصية لتحقيق الغاية المرجوة منها بدقة.
+                </p>
+            </div>
+        </div>
+
+        <div class="apple-card rounded-3xl p-6 sm:p-10 relative">
+
+            <form id="googleForm" class="space-y-6">
+                
+                <!-- Field 1: Name -->
+                <div class="space-y-2">
+                    <label class="block text-sm font-bold text-slate-800 flex items-center gap-2">
+                        <i class="fa-solid fa-user text-[#166156]"></i> الإسم الكريم <span class="text-rose-500">*</span>
+                    </label>
+                    <input type="text" name="entry.1341214189" required
+                        class="w-full px-4 py-3 rounded-2xl bg-slate-50/80 border border-slate-200 text-slate-800 placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-[#166156]/20 focus:border-[#166156] transition-all"
+                        placeholder="أدخل اسمك الكريم هنا...">
+                </div>
+
+                <!-- Field 2: Phone -->
+                <div class="space-y-2">
+                    <label class="block text-sm font-bold text-slate-800 flex items-center gap-2">
+                        <i class="fa-solid fa-phone text-[#166156]"></i> رقم الجوال <span class="text-rose-500">*</span>
+                    </label>
+                    <input type="tel" name="entry.1066530158" required dir="ltr"
+                        class="w-full px-4 py-3 rounded-2xl bg-slate-50/80 border border-slate-200 text-slate-800 placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-[#166156]/20 focus:border-[#166156] transition-all text-right"
+                        placeholder="05XXXXXXXX">
+                </div>
+
+                <!-- Field 3: Program Dropdown -->
+                <div class="space-y-2">
+                    <label class="block text-sm font-bold text-slate-800 flex items-center gap-2">
+                        <i class="fa-solid fa-bookmark text-[#166156]"></i> ما هو البرنامج أو المبادرة الذي انضممت إليه؟ <span class="text-rose-500">*</span>
+                    </label>
+                    <div class="relative">
+                        <select name="entry.968486406" required
+                            class="w-full px-4 py-3 rounded-2xl bg-slate-50/80 border border-slate-200 text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-[#166156]/20 focus:border-[#166156] transition-all appearance-none cursor-pointer">
+                            <option value="" disabled selected>اختر البرنامج أو المبادرة من القائمة...</option>
+                            <option value="الفن و الألوان">الفن و الألوان</option>
+                            <option value="نماء القيم">نماء القيم</option>
+                            <option value="أقرا و مرّر">أقرا و مرّر</option>
+                            <option value="المتطوع المتميز">المتطوع المتميز</option>
+                            <option value="لوحة بلا فرشاة">لوحة بلا فرشاة</option>
+                            <option value="الحلو و المالح">الحلو و المالح</option>
+                            <option value="خبرة و تجربة">خبرة و تجربة</option>
+                            <option value="مجالس">مجالس</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center px-4 text-slate-500">
+                            <i class="fa-solid fa-chevron-down text-xs"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Field 4: Participant type -->
+                <div class="space-y-2">
+                    <label class="block text-sm font-bold text-slate-800 flex items-center gap-2">
+                        <i class="fa-solid fa-users text-[#166156]"></i> صفة المشارك (هل أنت؟)
+                    </label>
+                    <div class="grid grid-cols-2 gap-3">
+                        <label class="relative flex items-center cursor-pointer">
+                            <input type="radio" name="entry.1477681225" value="ولي امر" class="peer sr-only">
+                            <div class="w-full p-3.5 rounded-2xl border border-slate-200 bg-slate-50/50 peer-checked:border-[#166156] peer-checked:bg-[#166156]/5 peer-checked:text-[#166156] transition-all text-center text-xs sm:text-sm font-semibold text-slate-700">
+                                ولي أمر
+                            </div>
+                        </label>
+                        <label class="relative flex items-center cursor-pointer">
+                            <input type="radio" name="entry.1477681225" value="مشارك/ مستفيد" class="peer sr-only">
+                            <div class="w-full p-3.5 rounded-2xl border border-slate-200 bg-slate-50/50 peer-checked:border-[#166156] peer-checked:bg-[#166156]/5 peer-checked:text-[#166156] transition-all text-center text-xs sm:text-sm font-semibold text-slate-700">
+                                مشارك / مستفيد
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div id="ratingsContainer" class="space-y-6 pt-4">
+                    <!-- Dynamic rating questions generator -->
+                </div>
+
+                <script>
+                    const ratingsData = [
+                        { label: "مدى الاستفادة من خدمات الجمعية:", entry: "entry.958156230" },
+                        { label: "مدى شعورك بفهم وتلبية احتياجاتك:", entry: "entry.404048385" },
+                        { label: "ما درجة حرص موظفي الجمعية على تقديم المساعدة:", entry: "entry.1018741052" },
+                        { label: "ما مدى سرعة تواصل موظفي الجمعية معك:", entry: "entry.53714325" },
+                        { label: "ما مدى تقييمك لجودة خدمات الجمعية:", entry: "entry.1972655586" },
+                        { label: "ما مدى تقييمك لسرعة تلبية طلبك:", entry: "entry.1273107618" },
+                        { label: "ما مدى رضاك بشكل عام عن الجمعية:", entry: "entry.360443805" }
+                    ];
+
+                    function buildRatingHTML(item) {
+                        return `
+                        <div class="space-y-3 p-4 rounded-2xl bg-slate-50/50 border border-slate-100">
+                            <label class="block text-xs sm:text-sm font-bold text-slate-800 flex items-center justify-between">
+                                <span>${item.label}</span>
+                                <span class="text-rose-500">*</span>
+                            </label>
+                            <input type="hidden" name="${item.entry}" required id="val_${item.entry}">
+                            <div class="flex items-center justify-center gap-2 py-2" id="stars_${item.entry}">
+                                <button type="button" onclick="setRating('${item.entry}', 1)" class="star-btn text-2xl text-slate-300 focus:outline-none" data-value="1"><i class="fa-solid fa-star"></i></button>
+                                <button type="button" onclick="setRating('${item.entry}', 2)" class="star-btn text-2xl text-slate-300 focus:outline-none" data-value="2"><i class="fa-solid fa-star"></i></button>
+                                <button type="button" onclick="setRating('${item.entry}', 3)" class="star-btn text-2xl text-slate-300 focus:outline-none" data-value="3"><i class="fa-solid fa-star"></i></button>
+                                <button type="button" onclick="setRating('${item.entry}', 4)" class="star-btn text-2xl text-slate-300 focus:outline-none" data-value="4"><i class="fa-solid fa-star"></i></button>
+                                <button type="button" onclick="setRating('${item.entry}', 5)" class="star-btn text-2xl text-slate-300 focus:outline-none" data-value="5"><i class="fa-solid fa-star"></i></button>
+                            </div>
+                            <div class="flex justify-between text-[10px] text-slate-400 px-1 font-medium">
+                                <span>ضعيف</span>
+                                <span>ممتاز جداً</span>
+                            </div>
+                        </div>`;
+                    }
+
+                    document.getElementById('ratingsContainer').innerHTML = ratingsData.map(buildRatingHTML).join('');
+
+                    function setRating(entryName, val) {
+                        document.getElementById('val_' + entryName).value = val;
+                        const container = document.getElementById('stars_' + entryName);
+                        const buttons = container.querySelectorAll('.star-btn');
+                        buttons.forEach((btn) => {
+                            const btnVal = parseInt(btn.getAttribute('data-value'));
+                            const icon = btn.querySelector('i');
+                            if (btnVal <= val) {
+                                btn.classList.remove('text-slate-300');
+                                btn.classList.add('text-[#D2A16E]');
+                            } else {
+                                btn.classList.remove('text-[#D2A16E]');
+                                btn.classList.add('text-slate-300');
+                            }
+                        });
+                    }
+                </script>
+
+                <!-- Field: Notes -->
+                <div class="space-y-2 pt-2">
+                    <label class="block text-sm font-bold text-slate-800 flex items-center gap-2">
+                        <i class="fa-solid fa-comment-dots text-[#166156]"></i> أي ملاحظات أخرى أو مقترحات تطويرية:
+                    </label>
+                    <textarea name="entry.1476329750" rows="3"
+                        class="w-full px-4 py-3 rounded-2xl bg-slate-50/80 border border-slate-200 text-slate-800 placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-[#166156]/20 focus:border-[#166156] transition-all"
+                        placeholder="شاركنا رأيك أو مقترحك هنا..."></textarea>
+                </div>
+
+                <!-- Submit Button & Contact Info under button -->
+                <div class="pt-4 space-y-4">
+                    <button type="submit"
+                        class="w-full py-4 rounded-2xl bg-[#166156] hover:bg-[#21A38E] text-white font-bold text-sm tracking-wide shadow-lg shadow-[#166156]/20 transition-all flex items-center justify-center gap-2">
+                        <span>إرسال الاستبيان</span>
+                        <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </button>
+
+                    <!-- Contact Details Below Register Button -->
+                    <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col sm:flex-row items-center justify-center gap-4 text-xs text-slate-600 font-medium">
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-phone text-[#21A38E]"></i> 0538807807</span>
+                        <span class="hidden sm:inline text-slate-300">|</span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-envelope text-[#21A38E]"></i> info@tnmiaa.org.sa</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="w-full bg-white border-t border-slate-200/60 mt-16 py-8 px-6 text-slate-600">
+        <div class="container mx-auto max-w-4xl flex flex-col items-center justify-center gap-5 text-center">
+            
+            <!-- Social Media Icons (Icons Only) -->
+            <div class="flex items-center gap-3">
+                <a href="https://x.com/tnmiaaorgsa" target="_blank" aria-label="X (Twitter)" class="w-11 h-11 rounded-full bg-slate-900 text-white hover:bg-[#166156] flex items-center justify-center transition-all shadow-md group">
+                    <svg class="w-4 h-4 fill-current transition-transform group-hover:scale-110" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/tnmiaaorgsa" target="_blank" aria-label="Instagram" class="w-11 h-11 rounded-full bg-slate-100 hover:bg-[#166156] hover:text-white flex items-center justify-center transition-all text-slate-700 shadow-sm group">
+                    <i class="fa-brands fa-instagram text-base transition-transform group-hover:scale-110"></i>
+                </a>
+                <a href="https://www.tnmiaa.org.sa/" target="_blank" aria-label="Website" class="w-11 h-11 rounded-full bg-slate-100 hover:bg-[#166156] hover:text-white flex items-center justify-center transition-all text-slate-700 shadow-sm group">
+                    <i class="fa-solid fa-globe text-base transition-transform group-hover:scale-110"></i>
+                </a>
+            </div>
+
+            <!-- Copyright Credits -->
+            <div class="space-y-1.5 text-xs text-slate-500">
+                <p>جميع الحقوق محفوظة بواسطة | <a href="https://mol7j.com" target="_blank" class="text-[#166156] font-bold hover:underline">محمد الحاج</a></p>
+                <p class="text-slate-400">جمعية التنمية الاهلية بعوالي المدينة المنورة © 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="loadingOverlay" class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-50 hidden flex flex-col items-center justify-center gap-3">
+        <div class="w-10 h-10 border-3 border-white border-t-[#21A38E] rounded-full animate-spin"></div>
+        <p class="text-white font-semibold text-xs tracking-wide">جاري إرسال ردك...</p>
+    </div>
+
+    <div id="successModal" class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-sm w-full p-6 text-center shadow-2xl space-y-4 border border-slate-100">
+            <div class="w-14 h-14 bg-teal-50 text-[#166156] rounded-full flex items-center justify-center mx-auto text-xl">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="space-y-1">
+                <h3 class="text-base font-bold text-slate-900">تم إرسال ردك بنجاح</h3>
+                <p class="text-xs text-slate-500 leading-relaxed">شكراً لمشاركتك. مساهمتك تمثل ركيزة أساسية لتحسين وتطوير أداء الجمعية.</p>
+            </div>
+            <button onclick="closeSuccessModal()" class="w-full py-3 rounded-2xl bg-[#166156] text-white font-bold text-xs hover:bg-[#21A38E] transition-all shadow-md shadow-[#166156]/20">
+                إغلاق والعودة
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const formActionURL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdZKZC2ooMofj6Fo5b0wOP9_WIAyqConqBHxjMqL4b9GmvLxQ/formResponse";
+        const form = document.getElementById('googleForm');
+        const loadingOverlay = document.getElementById('loadingOverlay');
+        const successModal = document.getElementById('successModal');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            loadingOverlay.classList.remove('hidden');
+
+            const formData = new FormData(form);
+            const urlParams = new URLSearchParams();
+            for (const [key, value] of formData.entries()) {
+                urlParams.append(key, value);
+            }
+
+            fetch(formActionURL, {
+                method: 'POST',
+                mode: 'no-cors',
+                body: urlParams
+            }).then(() => {
+                setTimeout(() => {
+                    loadingOverlay.classList.add('hidden');
+                    successModal.classList.remove('hidden');
+                    form.reset();
+                    document.querySelectorAll('.star-btn').forEach(btn => btn.classList.remove('text-[#D2A16E]'));
+                    document.querySelectorAll('.star-btn').forEach(btn => btn.classList.add('text-slate-300'));
+                }, 600);
+            }).catch(error => {
+                console.error('Submission error:', error);
+                setTimeout(() => {
+                    loadingOverlay.classList.add('hidden');
+                    successModal.classList.remove('hidden');
+                    form.reset();
+                    document.querySelectorAll('.star-btn').forEach(btn => btn.classList.remove('text-[#D2A16E]'));
+                    document.querySelectorAll('.star-btn').forEach(btn => btn.classList.add('text-slate-300'));
+                }, 600);
+            });
+        });
+
+        function closeSuccessModal() {
+            successModal.classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
